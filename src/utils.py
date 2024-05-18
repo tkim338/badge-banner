@@ -11,7 +11,8 @@ def get_window(
     :param window_range: int representation of width of window to use in calcuation
     :return: (int, int) consisting of int upper and lower bounds of window
     """
+    lower_bound = window_range * math.floor(timestamp / window_range) + 1
     return (
-        window_range * math.floor(timestamp / window_range),
-        window_range * math.ceil(timestamp / window_range)
+        lower_bound,
+        lower_bound + window_range - 1
     )

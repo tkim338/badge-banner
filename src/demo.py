@@ -1,11 +1,11 @@
 import BadgeScanStream
 import utils
 
-video_sample_ref = {
-    (0, 14): 'clip_1.mp4',
-    (14, 28): 'clip_2.mp4',
-    (28, 42): 'clip_3.mp4',
-    (42, 56): 'clip_4.mp4',
+video_sample_map = {
+    (1, 14): 'clip_1.mp4',
+    (15, 28): 'clip_2.mp4',
+    (29, 42): 'clip_3.mp4',
+    (43, 56): 'clip_4.mp4',
 }
 
 event_list = BadgeScanStream.generate_random_date(
@@ -28,3 +28,6 @@ while i < len(event_list):
         i += 1
 
 print(windows_to_check)
+
+for window in windows_to_check:
+    print(video_sample_map[window])
