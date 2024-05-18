@@ -1,5 +1,6 @@
 import math
 
+
 def get_window(
         timestamp: int,
         window_range: int
