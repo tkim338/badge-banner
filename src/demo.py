@@ -8,3 +8,5 @@ event_list = BadgeScanStream.generate_random_date(
 
 for e in event_list:
     print(e)
+
+print({e[0] for e in event_list})
