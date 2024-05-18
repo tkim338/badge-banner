@@ -16,7 +16,7 @@ def generate_random_date(
     :return:
     """
     badge_list = [str(uuid.uuid4()) for i in range(num_unique_badges)]
-    event_timestamps = random.sample(range(duration_sec), num_scan_events)
+    event_timestamps = random.sample(range(1, duration_sec), num_scan_events)
 
     event_list = []
     badge_index = 0
