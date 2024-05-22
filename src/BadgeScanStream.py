@@ -2,7 +2,7 @@ import random
 import uuid
 
 
-def generate_random_date(
+def generate_random_data(
         duration_sec: int,
         num_unique_badges: int,
         num_scan_events: int
